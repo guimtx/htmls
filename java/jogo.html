@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const dado = Math.floor(Math.random() * 6) + 1; // Gera um número aleatório entre 1 e 6 (simulando um dado)
+
+        const palpite = prompt("Adivinhe se o resultado do dado é par ou ímpar (digite 'par' ou 'ímpar'):");
+
+        if (palpite === "par" || palpite === "ímpar") {
+            const resultado = dado % 2 === 0 ? "par" : "ímpar"; // Verifica se o resultado do dado é par ou ímpar
+            if (palpite === resultado) {
+                console.log('Parabéns! O resultado do dado foi '+dado+', que é '+resultado+'. Você acertou!');
+            } else {
+                console.log('Ops! O resultado do dado foi '+dado+', que é '+resultado+'. Você errou!');
+            }
+        } else {
+            console.log("Por favor, insira uma opção válida (par ou ímpar).");
+        }
+
+    </script>
+    
+</body>
+</html>
