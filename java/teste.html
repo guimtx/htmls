@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .titulo{
+            color: rgb(255, 136, 0);
+            text-align: center;
+
+        }
+        body{
+            background-color: blueviolet;
+        }
+        .result{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">teste de c</h1>
+    <div class="mb-3">
+        <label for="social" class="form-label">digite um numero que direi se é negativo ou positivo</label><br>
+        <input type="number" class="form-control" id="numero" placeholder="site">
+    </div>
+    <div class="mb-3 text-end">
+        <button type="button" class="btn btn-primary" onclick="verificar()">Calcular</button>
+    </div>
+    <div class="text-center result" id="resultado">
+        resultado
+    </div>
+    <script>
+        function verificar(){
+            let n1=document.getElementById('numero');
+            let numero
+            var resultado=document.getElementById('resultado')
+            numero=parseInt(n1.value)%2;
+            if(numero==0)
+               resultado.innerText=("o numero "+n1.value+" que vc digitou é par");
+            else
+                resultado.innerText=("o numero "+n1.value+" que vc digitou é impar");
+
+                
+        }
+
+        
+    </script>
+    
+</body>
+</html>
