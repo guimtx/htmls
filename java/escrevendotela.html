@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var val=1540.5;
+        var nome=prompt("digite seu nome");
+        document.write(`seu nome ${nome} tem  ${nome.length} letras <br>`) ;//document.white escreve na tela e variavel+.length conta caracteres e mostra
+        document.write(`o valor é de ${val.toLocaleString('pt-BR',{style: 'currency', currency: 'BRLs'})}`)//transforma valor em dinheiro de acordo com pais escolhido
+    </script>
+</body>
+</html>
