@@ -1,0 +1,140 @@
+.Sofia {
+    background-color: rgba(255, 255, 255, 0.363);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    font-family: "Sofia", sans-serif;
+    display: inline;
+  }
+
+  nav {
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100px;
+
+  }
+
+  nav a {
+    color: greenyellow;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3;
+
+  }
+
+  nav a:hover {
+    background-color: rgb(18, 175, 175);
+  }
+
+  nav button {
+    font-size: 100px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+  }
+
+  nav button:hover {
+    background-color: rgba(255, 1, 1, 0.1);
+  }
+
+  nav img {
+    height: 100px;
+    width: auto;
+  }
+
+  .banner {
+    /* Define a altura do banner */
+    height: 300px;
+    /* Define a largura do banner */
+    width: 100%;
+    /* Define a imagem de fundo e ajusta a sua posição */
+    background: url('imagenscss/bannercabana.png') no-repeat center center/cover;
+    /* Adiciona uma sombra ao redor do banner */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Define o texto como branco */
+    color: rgb(5, 253, 38);
+    /* Centraliza o texto verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Define uma fonte e seu tamanho */
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    /* Adiciona uma sombra ao texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .titulo {
+    font-family: cursive;
+    background-color: rgb(9, 117, 5);
+    color: rgb(82, 255, 14);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: rgb(9, 117, 5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .fundo {
+    background-image: url(imagenscss/fotobambu.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+  }
+
+  .imagem {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagem img {
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    transition: all 0.3s linear;
+    height: 200px;
+    width: auto;
+  }
+
+  .imagem p {
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+
+  .imagem img:hover {
+    box-shadow: 0 0 8px rgb(207, 198, 63);
+    border: solid 5px rgb(255, 255, 255);
+  }
+  
+  button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(104, 221, 100);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  button:hover {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(87, 214, 36);
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+  }

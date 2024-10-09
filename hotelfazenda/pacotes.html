@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacotes</title>
+  <link rel="stylesheet" href="css/css.css">
+  <style>
+    .fundo {
+      background-image: url(imagenshf/fundo\ bamboo.jpg);
+      background-repeat: repeat-x;
+      background-size: cover;
+    }
+
+    h2 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 40px;
+      background-color: rgb(9, 117, 5);
+      color: #fff;
+      padding: 5px;
+      width: 100;
+      box-sizing: content-box;
+      margin: 0px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+    }
+
+    .imagem-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagem-container img {
+      text-align: center;
+      margin: 0 20px;
+      border-radius: 50px;
+      box-shadow: 5px 5px 30px rgb(0, 0, 0);
+      transition: all 0.3s linear;
+    }
+
+    .imagem-container p {
+      background-image: url(./imagenshf/placa.jpg);
+      text-align: center;
+      vertical-align: middle;
+      padding: 8px;
+      width: 400px;
+      background-size: 400px;
+      background-repeat: no-repeat;
+      font-size: larger;
+      color: rgb(0, 0, 0);
+      background-position-x: center;
+      background-position: center;
+    }
+
+
+    .imagem-container img:hover {
+      box-shadow: 0 0 8px rgb(207, 198, 63);
+      border: solid 5px rgb(255, 255, 255);
+    }
+
+    table {
+      width: 50%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+
+    button {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: rgb(104, 221, 100);
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: rgb(87, 214, 36);
+      box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+    }
+  </style>
+</head>
+
+<body class="fundo">
+  <div class="banner">
+    <h1>Campo Rural</h1>
+  </div>
+  <nav>
+    <img src="css/imagenscss/pandabambu.png">
+    <a href="./index.html">Pagina Inicial</a>
+    <a href="./programação.html">Programação</a>
+    <a href="./Pacotes.html">Pacotes</a>
+    <img src="css/imagenscss/pandabambu.png">
+  </nav>
+  <center>
+    <h2>Pacotes e Ofertas</h2>
+    <p>Parcelamos em até 6x sem juros!</p>
+    <hr>
+    <img src="./imagenshf/promoces.png" width="550" height="400">
+
+    <div class="imagem-container">
+      <div>
+        <img src="./imagenshf/promocao_chale_trilha.jpg" alt="img" height="260" width="330">
+        <p> Diária chalé e trilha! <br>(Promoção casal!)</p>
+        <p>Por apenas 200,00 reais!</p>
+        <button onclick="site"> Clique Aqui para comprar!</button>
+      </div>
+      <div>
+        <img src="./imagenshf/meio-semana-hotel-fazenda-40OFF.webp" alt="img" height="260" width="330">
+        <p>Pacote meio de semana, 4 diárias tem 40% off! <br> (Crianças até 12 anos não pagam entrada!)</p>
+        <p>Por apenas 100 reais por pessoa!</p>
+        <button onclick="site"> Clique Aqui para comprar!</button>
+      </div>
+      <div>
+        <img src="./imagenshf/site-fonda-baixa-temporada-2.jpg" alt="img" height="260" width="330">
+        <p>Pacote baixa temporada, 20% off!<br>(Escolha seu período!)</p>
+        <p>Por apenas 119,00 reais por pessoa!</p>
+        <button onclick="site"> Clique Aqui para comprar!</button>
+      </div>
+    </div>
+    <hr>
+    <h2>Receba Novidades:</h2>
+    <p>Cadastre seu e-mail para receber nossas promoções:</p>
+  </center>
+  <table>
+    <tr>
+      <th>E-mail</th>
+      <th>Ações</th>
+    </tr>
+    <tr>
+      <td><input type="email" id="emailInput" placeholder="Digite seu e-mail"></td>
+      <td><input type="submit" value="Cadastrar" onclick="cadastrarEmail()"></td>
+    </tr>
+  </table>
+  <hr>
+  <footer>
+    <h2>Contato</h2>
+    <p>Informações de contato, formulário de contato e mapa de localização.</p>
+    <p> Para mais informações ligue (00)000-0000</p>
+    <p>&copy; 2024 Campo Rural. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>
